@@ -67,6 +67,17 @@ p:last-child {
 
 .hero {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
@@ -93,17 +104,9 @@ p:last-child {
 }
 
 .logo-web {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-txt);
 }
 
-.logo-studio-drc {
-  font-family: var(--main-font);
-}
 
 .logo-studio-wt {
   color: var(--white-txt);
@@ -233,18 +236,6 @@ img {
 }
 
 /* Герой */
-
-.hero-container {
-  padding-top: 200px;
-max-width: 1600px;
-height: 600px;
-margin-left: auto;
-margin-right: auto;
-background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero.jpg);
-background-position: center;
-background-size: contain;
-background-repeat: no-repeat;
-}
 
 .main-btn {
   cursor: pointer;
@@ -468,11 +459,6 @@ background-repeat: no-repeat;
   cursor: pointer;
 }
 
-/* .clients-list .clients-logo:hover,
-.clients-list .clients-logo:focus {
-  fill: #2196F3;
-} */
-
 .clients-logo {
   width: 106px;
   height: 60px;
@@ -504,8 +490,15 @@ address {
   background: var(--primary-dark-bg);
 }
 
-.footer-link {
-  margin-bottom: 20px;
+
+.address-contacts:hover,
+.address-contacts:focus {
+color: var(--accent-txt);
+}
+
+.address-footer:hover,
+.address-footer:focus {
+  color: var(--accent-txt);
 }
 
 .address-contacts {
@@ -618,6 +611,7 @@ address {
 }
 
 /* Продукты */
+
 .products {
   display: flex;
   flex-wrap: wrap;
@@ -665,8 +659,13 @@ address {
   border-left: 1px solid #eeeeee;
 }
 
-.products-link:hover,
-.products-link:focus {
+.portfolio-products {
+display: block;
+}
+ 
+
+.portfolio-products:hover,
+.portfolio-products:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
